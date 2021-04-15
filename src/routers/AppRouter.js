@@ -11,7 +11,7 @@ const AppRouter = () => {
           <Route exact path='/login'>
             <LoginScreen />
           </Route>
-          <DashboardRoutes />
+          <Route component={DashboardRoutes} />
         </Switch>
       </div>
     </Router>

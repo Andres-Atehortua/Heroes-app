@@ -10,7 +10,7 @@ const HeroCard = ({
   characters,
 }) => {
   return (
-    <Link to={`./hero/${id}`} className='my-card'>
+    <Link to={`/hero/${id}`} className='my-card'>
       <img
         src={`./assets/${id}.jpg`}
         className='img img-responsive'

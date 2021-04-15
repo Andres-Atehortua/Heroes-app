@@ -2,6 +2,7 @@ import { Redirect, Route, Switch } from 'react-router';
 import DcScreen from '../components/dc/DcScreen';
 import HeroScreen from '../components/heroes/HeroScreen';
 import MarvelScreen from '../components/marvel/MarvelScreen';
+import SearchScreen from '../components/search/SearchScreen';
 import Navbar from '../components/ui/Navbar';
 
 const DashboardRoutes = () => {
@@ -14,12 +15,15 @@ const DashboardRoutes = () => {
             <MarvelScreen />
           </Route>
 
-          <Route path='/hero/:heroeId'>
+          <Route path='/hero/:heroId'>
             <HeroScreen />
           </Route>
 
           <Route path='/dc'>
             <DcScreen />
+          </Route>
+          <Route path='/search'>
+            <SearchScreen />
           </Route>
 
           <Redirect to='/marvel' />
