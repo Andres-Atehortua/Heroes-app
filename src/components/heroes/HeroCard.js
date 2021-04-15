@@ -12,7 +12,7 @@ const HeroCard = ({
   return (
     <Link to={`/hero/${id}`} className='my-card'>
       <img
-        src={`./assets/${id}.jpg`}
+        src={`/assets/${id}.jpg`}
         className='img img-responsive'
         alt={superhero}
       />
