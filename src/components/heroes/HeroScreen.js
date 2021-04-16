@@ -29,7 +29,7 @@ const HeroScreen = () => {
       <div className='col-4'>
         <img
           className='img-thumbnail animate__animated animate__fadeInLeft'
-          src={`Heroes-app/assets/${heroId}.jpg`}
+          src={`../assets/${heroId}.jpg`}
           alt={superhero}
         />
       </div>

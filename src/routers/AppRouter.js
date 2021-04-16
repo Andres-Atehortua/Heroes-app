@@ -5,7 +5,7 @@ import DashboardRoutes from './DashboardRoutes';
 
 const AppRouter = () => {
   return (
-    <Router basename='/Heroes-app'>
+    <Router>
       <div>
         <Switch>
           <Route exact path='/login'>
