@@ -4,6 +4,8 @@ import { AuthContext } from '../auth/AuthContext';
 import { authTypes } from '../types/types';
 
 const LoginScreen = () => {
+  const lastPage = localStorage.getItem('lastPage') || '/';
+
   const { dispatch } = useContext(AuthContext);
 
   const history = useHistory();
@@ -11,7 +13,7 @@ const LoginScreen = () => {
   const handleLogin = () => {
     dispatch({ type: authTypes.LOGIN, payload: { name: 'Andrés' } });
 
-    history.replace('/');
+    history.replace(lastPage);
   };
 
   return (
