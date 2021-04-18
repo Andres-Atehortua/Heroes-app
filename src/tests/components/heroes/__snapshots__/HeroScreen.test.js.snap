@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing component <HeroScreen /> should show <Redirect /> if arguments are not passed 1`] = `""`;
